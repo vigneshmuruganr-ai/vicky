@@ -18,7 +18,7 @@ def create_image(x, ys, title="Sample Visualization"):
 
 # Load Data
 try:
-    df = pd.read_csv('/content/a1.csv')
+    df = pd.read_csv('a1.csv')
     data_display = f"<h2>Loaded Data:</h2>{df.to_html()}"
 except FileNotFoundError:
     data_display = "<p>Error: a1.csv not found. Please upload the file.</p>"
